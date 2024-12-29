@@ -22,6 +22,34 @@
   <!-- Template Main CSS File -->
   <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time(); ?>" />
+  <style>
+    .language-toggle {
+  display: flex;
+  flex-direction: column; /* Susun teks di atas toggle */
+  align-items: center;
+  gap: 5px; /* Jarak antara teks dan toggle */
+  margin-left: 20px; /* Tambahkan margin kiri untuk kesejajaran */
+}
+
+.language-text {
+  display: none; 
+  font-size: 10px;
+  color: #666666;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .language-toggle {
+    align-items: flex-start; /* Pastikan sejajar ke kiri pada perangkat kecil */
+    margin-left: 20px; /* Pastikan tetap sejajar di perangkat kecil */
+  }
+
+  .language-text {
+    text-align: left;
+    display: inline-block;
+  }
+}
+  </style>
 
 </head>
 
@@ -54,11 +82,6 @@
     </nav>
   </div>
 </header>
-
-  
-  
-
-
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/BG.JPG)">
     <div class="overlay-itro"></div>
@@ -94,12 +117,12 @@
                         <div class="about-info">
                           <table>
                             <tr>
-                              <td><span class="title-s" data-text="name">Name</span></td>
+                              <td><span class="title-s" >Name</span></td>
                               <td>:</td>
                               <td><span class="lead">Wahyu Bagus Setiawan</span></td>
                             </tr>
                             <tr>
-                              <td><span class="title-s" data-text="age">Age</span></td>
+                              <td><span class="title-s" >Age</span></td>
                               <td>:</td>
                               <td><span class="lead">23</span></td>
                             </tr>
