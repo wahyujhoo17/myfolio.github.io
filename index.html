@@ -22,76 +22,41 @@
   <!-- Template Main CSS File -->
   <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time(); ?>" />
-  <style>
-    .loading,
-    .sent-message,
-    .error-message {
-      display: none;
-      /* Initially hide these messages */
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .loading {
-      color: blue;
-    }
-
-    .sent-message {
-      color: green;
-    }
-
-    .error-message {
-      display: none;
-      /* Hidden by default */
-      margin-top: 10px;
-      font-size: 14px;
-      color: red;
-      background-color: rgba(255, 0, 0, 0.2);
-      /* Semi-transparent red background */
-      border: 1px solid red;
-      padding: 10px;
-      border-radius: 5px;
-      opacity: 0;
-      /* Fully transparent */
-      transition: opacity 0.3s ease;
-      /* Smooth transition for visibility */
-    }
-
-    .error-message.active {
-      display: block;
-      opacity: 1;
-      /* Fully visible */
-    }
-  </style>
 
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <div class="container d-flex align-items-center justify-content-between">
+    <h1 style="margin-left: 20px;" class="logo">
+      <a href="/DevFolio">
+        <img src="assets/img/3.png" style="transform: scale(2);">
+      </a>
+    </h1>
 
-      <h1 style="margin-left: 20px;" class="logo"><a href="/DevFolio"><img src="assets/img/3.png"
-            style="transform: scale(2);"></a></h1>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a id="nav-home" class="nav-link scrollto active" href="#hero" data-text="home">Home</a></li>
+        <li><a id="nav-about" class="nav-link scrollto" href="#about" data-text="about">About</a></li>
+        <li><a id="nav-services" class="nav-link scrollto" href="#services" data-text="services">Services</a></li>
+        <li><a id="nav-work" class="nav-link scrollto" href="#work" data-text="work">Work</a></li>
+        <li><a id="nav-contact" class="nav-link scrollto" href="#contact" data-text="contact">Contact</a></li>
+        <li id="language-toggle-container" class="language-toggle">
+          <span class="language-text" data-text="language">Language</span>
+          <label class="switch">
+            <input type="checkbox" id="checkLanguage">
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+  </div>
+</header>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a id="nav-home" class="nav-link scrollto active" href="#hero" data-text="home">Home</a></li>
-          <li><a id="nav-about" class="nav-link scrollto" href="#about" data-text="about">About</a></li>
-          <li><a id="nav-services" class="nav-link scrollto" href="#services" data-text="services">Services</a></li>
-          <li><a id="nav-work" class="nav-link scrollto" href="#work" data-text="work">Work</a></li>
-          <li><a id="nav-contact" class="nav-link scrollto" href="#contact" data-text="contact">Contact</a></li>
-          <li></li>
-          <li><label class="switch">
-              <input type="checkbox" id="checkLanguage">
-              <span class="slider round"></span>
-            </label></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header>
+  
+  
 
 
   <!-- ======= Hero Section ======= -->
@@ -129,12 +94,12 @@
                         <div class="about-info">
                           <table>
                             <tr>
-                              <td><span class="title-s">Name</span></td>
+                              <td><span class="title-s" data-text="name">Name</span></td>
                               <td>:</td>
                               <td><span class="lead">Wahyu Bagus Setiawan</span></td>
                             </tr>
                             <tr>
-                              <td><span class="title-s">Age</span></td>
+                              <td><span class="title-s" data-text="age">Age</span></td>
                               <td>:</td>
                               <td><span class="lead">23</span></td>
                             </tr>

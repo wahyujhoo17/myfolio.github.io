@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
       msg:"Send Message",
       contact2:"Contact Me",
       mInfo:"Feel free to get in touch for any questions or potential opportunities. I am eager to connect and explore new projects together.",
-      
+      language : "Language",
+      name:"Name",
+      age:"Age",
     },
     indonesian: {
       home: "Beranda",
@@ -58,6 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
       msg:"Kirim Pesan",
       contact2:"Hubungi Saya",
       mInfo:"Jangan ragu untuk menghubungi kami jika ada pertanyaan atau peluang potensial. Saya ingin sekali terhubung dan menjelajahi proyek baru bersama.",
+      language : "Bahasa",
+      name:"Nama",
+      age:"Usia",
     }
   };
 
