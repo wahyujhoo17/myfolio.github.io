@@ -1,4 +1,4 @@
-document.querySelector('.php-email-form').addEventListener('submit', function (e) {
+    document.querySelector('.php-email-form').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent default form submission
 
     const form = e.target;
